@@ -58,9 +58,10 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    margin: 0 10%;
+    width: 100%;
+ 
     flex-wrap: wrap;
+    box-sizing: border-box;
 
 
 }
@@ -69,7 +70,9 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    flex-basis: 36%;
+    margin-left: 5%;
+    box-sizing: border-box;
 
 }
 .hero-banner-image{
@@ -100,4 +103,28 @@ button {
     border: none;
     font-size: 18px;
     font-weight: 500;
+}
+.clear.centered {
+    display: block;
+    margin: auto;  
+ 
+    text-align: center;
+ 
+}
+h2{
+     color: var(--light-burgundy);
+     font-size: 40.5px;
+     font-weight: bold;
+     font-stretch: normal;
+     padding: 15px;
+
+}
+hr{
+    width: 30%;
+    margin: 20px auto !important;
+    box-sizing: border-box;
+    background-color: var(--light-burgundy);
+    height: 4px;
+    border: 0;
+
 }
