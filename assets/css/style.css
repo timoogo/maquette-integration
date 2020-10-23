@@ -1,0 +1,103 @@
+:root {
+    --dark-blue-grey: #2f2359;
+    --blueberry: #4c3991;
+    --clear-color: #ffffff;
+    --light-burgundy: #bf3676;
+    --black: #222222;
+    --very-light-pink: #bbbbbb;
+    --brown-grey: #929292;
+    --brownish-grey: #747474;
+    --light-violet: #d3c4f2;
+    --brown-grey-two: #818181;
+    --font-family-main: 'Poppins'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-main);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+    align-items: center;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue-grey);
+    max-height: 100vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+nav ul li a {
+   
+    color: var(--clear-color);
+    text-decoration: none;  
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 10%;
+    flex-wrap: wrap;
+
+
+}
+
+.hero-banner-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+
+}
+.hero-banner-image{
+    width: 50%;
+}
+
+.hero-banner-overlay h1 {
+    color: var(--clear-color);
+    font-size: 46px;
+    font-weight: 800;
+    padding: 17px 0;
+    box-sizing: border-box;
+}
+
+.hero-banner-overlay p{
+    color: var(--clear-color);
+    padding: 17px 0; 
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: var(--light-burgundy);
+    color: var(--clear-color);
+    border-radius: 22px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
