@@ -48,9 +48,8 @@ nav ul li {
 }
 
 nav ul li a {
-   
     color: var(--clear-color);
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .hero-banner {
@@ -59,11 +58,8 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     width: 100%;
- 
     flex-wrap: wrap;
     box-sizing: border-box;
-
-
 }
 
 .hero-banner-overlay {
@@ -73,10 +69,10 @@ nav ul li a {
     flex-basis: 36%;
     margin-left: 5%;
     box-sizing: border-box;
-
 }
-.hero-banner-image{
-    width: 50%;
+
+.hero-banner-image {
+    width: 58%;
 }
 
 .hero-banner-overlay h1 {
@@ -87,12 +83,11 @@ nav ul li a {
     box-sizing: border-box;
 }
 
-.hero-banner-overlay p{
+.hero-banner-overlay p {
     color: var(--clear-color);
-    padding: 17px 0; 
+    padding: 17px 0;
     box-sizing: border-box;
 }
-
 
 button {
     background-color: var(--light-burgundy);
@@ -104,27 +99,335 @@ button {
     font-size: 18px;
     font-weight: 500;
 }
+
 .clear.centered {
     display: block;
-    margin: auto;  
- 
+    margin: auto;
     text-align: center;
- 
 }
-h2{
-     color: var(--light-burgundy);
-     font-size: 40.5px;
-     font-weight: bold;
-     font-stretch: normal;
-     padding: 15px;
 
+h2 {
+    color: var(--light-burgundy);
+    font-size: 40.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    padding: 15px;
 }
-hr{
+
+hr.centered {
     width: 30%;
     margin: 20px auto !important;
     box-sizing: border-box;
     background-color: var(--light-burgundy);
     height: 4px;
     border: 0;
+}
 
+hr.left {
+    width: 30%;
+    margin: 20px 0 !important;
+    box-sizing: border-box;
+    background-color: var(--light-burgundy);
+    height: 4px;
+}
+
+.rules {
+    position: relative;
+    min-height: 100vh;
+}
+
+.rules h3 {
+    width: 60%;
+    margin: auto;
+}
+
+/* .steps{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    justify-content: center;
+    margin: 3vh auto;
+ 
+} */
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent url("../img/backgroud-rules.png") no-repeat;
+    opacity: .05;
+    padding-bottom: 30px;
+}
+
+.step h4 {
+    padding: 3% 0;
+    font-size: 21px;
+    /* }
+.step{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 2vh auto; */
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.step {
+    width: 50%;
+    flex-basis: 50%;
+    align-self: stretch;
+}
+
+.step-image {
+    align-items: center;
+    display: flex;
+    margin: 0 29px;
+}
+
+.annotation {
+    font-size: 8px;
+    position: absolute;
+    top: 450px;
+    width: 23%;
+    right: -60px;
+    transform: rotate( 90deg);
+}
+
+.rules button {
+    margin: 15px auto;
+}
+
+.discover {
+    width: 100%;
+    margin: auto;
+}
+
+.discover-section-title {
+    margin-left: 40px;
+}
+
+.pollContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pollCard {
+    border-radius: 10px;
+    box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+    background-color: var(--clear-color);
+    width: 520px;
+    margin: 23px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+span.tag {
+    background-color: var(--light-violet);
+    color: var(--clear-color);
+    padding: 0 3%;
+    display: inline-block;
+    border-radius: 20px;
+    min-width: 45px;
+    text-align: center;
+    margin: 3.5px;
+}
+
+.poll-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.poll-infos {
+    width: 22vw;
+}
+
+.poll-image {
+    align-items: center;
+    display: flex;
+}
+
+.poll-users img {
+    position: relative;
+}
+
+.poll-users {
+    display: block;
+    position: absolute;
+}
+
+.poll-users img:last-of-type {
+    z-index: 10;
+    top: 0px;
+    left: -45px;
+}
+
+#solo {
+    position: relative;
+    left: 0px !important;
+    top: 0;
+}
+
+.poll-users span {
+    display: block;
+    position: relative;
+    top: -60px;
+    right: -80px;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: var(--brownish-grey);
+}
+
+.dots {
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+.dot {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: var(--brown-grey);
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.isActive {
+    background-color: var(--light-burgundy);
+}
+
+.personalized {
+    background-color: var(--blueberry);
+    min-height: 100vh;
+    position: relative;
+}
+
+.personalized .sectionTitle h2 {
+    color: var(--clear-color);
+    text-align: center;
+    
+}
+
+.personalized hr {
+    height: 2px;
+    width: 30%;
+    background-color: var(--clear-color);
+ 
+}
+
+.flex-wrapper-personalized {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15vh;
+}
+
+.dark.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: transparent url('../img/paris-personnalises.png') no-repeat;
+    padding-bottom: 30px;
+    opacity: 1;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    max-width: 70vw;
+    max-height: 60vh;
+}
+
+.left-content, .right-content {
+    flex-basis: 50%;
+}
+
+.left-content h3 {
+    color: var(--clear-color);
+    display: inline;
+    margin-bottom: 3vh;
+    box-sizing: border-box;
+}
+
+.left-content p, .infos {
+    color: var(--clear-color);
+    font-size: 16px;
+}
+
+.infos {
+    font-size: 12px;
+}
+
+.left-content .persolized-span {
+    background-color: var(--clear-color);
+    color: var(--dark-blue-grey);
+    padding: 3px 45px;
+    border-radius: 20px;
+}
+.persolized-span{
+    background-color: var(--clear-color);
+    color: var(--dark-blue-grey);
+    padding: 6px 40px;
+    border-radius: 20px;
+    height: 20px;
+}
+.left-content{
+display: flex;
+flex-direction: column;
+
+}
+.title{
+    justify-content: space-between;
+    display: flex;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 100%;
+    color: var(--clear-color);
+}
+.dark.step{
+    flex-direction: row;
+    display: flex;
+    margin-top: 3vh;
+    box-sizing: border-box;
+    width: 100% !important;
+    flex-basis: 100%;
+}
+.dark.step .number{
+    width: 50px;
+    height: 50px;
+    background-color: var(--clear-color);
+    color: var(--dark-blue-grey);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    margin-right: 22px;
+
+}
+.dark.step h3{
+    width: 90%;
+}
+.personalized button{
+    margin: auto;
+    display: block;
+    margin-top: 50px;
 }
